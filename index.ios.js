@@ -1,3 +1,6 @@
+import NavigationBar from 'react-native-navbar'
+import { Image } from 'react-native'
+import Lightbox from 'react-native-lightbox'
 
 
 var React = require('react-native');
@@ -23,12 +26,12 @@ var styles = StyleSheet.create({
 class CPBRepairApp extends React.Component{
   render() {
     return (
-      <NavigatorIOS
-        style={styles.container}
-        initialRoute = {{
-          title: 'Repair App',
-          component: Main
-        }} />
+        <NavigatorIOS
+          style={styles.container}
+          initialRoute = {{
+            title: 'Repair App',
+            component: Main
+          }} />
     );
   }
 }

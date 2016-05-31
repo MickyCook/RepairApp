@@ -1,9 +1,14 @@
+import Lightbox from 'react-native-lightbox'
+import {
+  ScrollView,
+  Text,
+  View,
+  ProgressViewIOS,
+} from 'react-native'
 var React = require('react-native');
 
 
 var {
-  Text,
-  View,
   StyleSheet,
   Image,
   TouchableHighlight
@@ -15,7 +20,10 @@ var styles = StyleSheet.create({
     flex: 1
   },
   image: {
-    height: 300,
+    height: 150,
+    width: 250,
+    marginTop: 25,
+    alignSelf: 'center'
   },
   buttonText: {
     fontSize: 24,
@@ -47,10 +55,30 @@ class Dashboard extends React.Component{
   }
 render(){
   return (
-      <View style={styles.container}>
-        <Image source={{uri: this.props.userInfo.avatar_url}} style={styles.image}/>
+      <ScrollView 
+        style={styles.container}
+        horizontal={false}>
+          <Lightbox >
+            <Image 
+              style={{
+                height: 202, 
+                width: 300,
+                alignSelf: 'center'
+              }}
+              source={{uri: this.props.userInfo.avatar_url}}
+            />
+          </Lightbox>
+          <ProgressViewIOS 
+            style={{
+              margin: 20,
+              width: 100,
+              alignSelf: 'center'
+            }}
+            progress={50 / 100}
+            progressTintColor={"rgba(74,144,226,1)"} 
+          />
         <Text style={styles.text}>Repair Status: {this.props.userInfo.repair_description}</Text>
-      </View>
+      </ScrollView>
     )
 }
 };

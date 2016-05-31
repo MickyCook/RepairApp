@@ -1,0 +1,113 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 59,
+					"ch": 20
+				},
+				"to": {
+					"line": 59,
+					"ch": 25
+				}
+			},
+			"type": "boolean",
+			"name": "Horizontal",
+			"group": "SCROLL VIEW"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 63,
+					"ch": 24
+				},
+				"to": {
+					"line": 63,
+					"ch": 27
+				}
+			},
+			"type": "number",
+			"name": "Height",
+			"max": 600,
+			"group": "LIGHTBOX"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 64,
+					"ch": 23
+				},
+				"to": {
+					"line": 64,
+					"ch": 26
+				}
+			},
+			"type": "number",
+			"name": "Width",
+			"max": 600,
+			"group": "LIGHTBOX"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 72,
+					"ch": 22
+				},
+				"to": {
+					"line": 72,
+					"ch": 24
+				}
+			},
+			"type": "number",
+			"name": "Margin",
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 73,
+					"ch": 21
+				},
+				"to": {
+					"line": 73,
+					"ch": 24
+				}
+			},
+			"type": "number",
+			"name": "Width",
+			"max": 600,
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 76,
+					"ch": 22
+				},
+				"to": {
+					"line": 76,
+					"ch": 24
+				}
+			},
+			"type": "number",
+			"name": "Progress",
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 77,
+					"ch": 31
+				},
+				"to": {
+					"line": 77,
+					"ch": 51
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "ProgressTintColor",
+			"group": "PROGRESS VIEW IOS"
+		}
+	]
+}
