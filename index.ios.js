@@ -29,7 +29,7 @@ class CPBRepairApp extends React.Component{
         <NavigatorIOS
           style={styles.container}
           initialRoute = {{
-            title: 'Repair App',
+            title: 'Follow Your Repair',
             component: Main
           }} />
     );

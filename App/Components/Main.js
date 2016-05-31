@@ -1,3 +1,4 @@
+import { Image } from 'react-native'
 var React = require('react-native');
 var api = require('../utils/api');
 var Dashboard = require('./Dashboard');
@@ -12,19 +13,17 @@ var {
 } = React;
 
 var styles = StyleSheet.create({
-  mainContainer: {
+    mainContainer: {
     flex: 1,
     padding: 30,
-    marginTop: 65,
     flexDirection: 'column',
     justifyContent: 'center',
-    backgroundColor: '#0171b5'
+    backgroundColor: 'rgba(0,0,0,0.5)'
   },
-  title: {
-    marginBottom: 20,
-    fontSize: 25,
-    textAlign: 'center',
-    color: '#fff'
+  backgroundImage: {
+    flex: 1,
+    alignSelf: 'stretch',
+    width: null,
   },
   searchInput: {
     height: 50,
@@ -53,6 +52,13 @@ var styles = StyleSheet.create({
     alignSelf: 'stretch',
     justifyContent: 'center'
   },
+  header: {
+    fontSize: 35,
+    alignSelf: 'center',
+    color: '#fff',
+    marginBottom: 20,
+    backgroundColor: 'transparent'
+  }
 });
 
 class Main extends React.Component{
@@ -99,11 +105,25 @@ class Main extends React.Component{
       this.state.error ? <Text> {this.state.error} </Text> : <View></View>
     );
     return(
-      <View style={styles.mainContainer}>
-      <Text style={styles.title}> Enter Your Username </Text>
+      <Image style={styles.backgroundImage}
+          source={{uri:'http://cookpaintbody.com/api/images/bmw.jpg'}}
+        >
+        <View style={styles.mainContainer}>
+      <Image 
+        style={{
+          width: 64,
+          height: 64,
+          alignSelf: 'center'
+        }}
+        resizeMode={"contain"}
+        source={{uri:'http://cookpaintbody.com/api/images/paint4.png'}}
+      />
+      <Text style={styles.header}>Cook Paint & Body</Text>
       <TextInput
         style={styles.searchInput}
         value={this.state.username}
+        placeholder={'Enter Username'}
+        placeholderTextColor={"rgba(255,255,255,0.9)"}
         onChange={this.handleChange.bind(this)} />
         <TouchableHighlight
           style={styles.button}
@@ -117,6 +137,7 @@ class Main extends React.Component{
           size="large"></ActivityIndicatorIOS>
         {showErr}
       </View>
+      </Image>
       )
   }
 };
