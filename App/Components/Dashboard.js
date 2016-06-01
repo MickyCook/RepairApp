@@ -96,6 +96,17 @@ render(){
           />
         <Text style={styles.text}>{this.props.userInfo.repair_description}</Text>
         <Text style={styles.text}>Repair Feed:</Text>
+                <Lightbox >
+            <Image 
+              style={{
+                height: 202, 
+                width: 300,
+                alignSelf: 'center'
+              }}
+              source={{uri: this.props.userInfo.avatar_url}}
+            />
+          </Lightbox>
+      <Text style={styles.text}>{this.props.userInfo.repair_description}</Text>
       </ScrollView>
     )
 }
