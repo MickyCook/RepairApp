@@ -33,6 +33,10 @@ var styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     marginTop: 25
+  },
+  status: {
+    textAlign: 'center',
+    marginBottom: 25
   }
 });
 
@@ -53,11 +57,24 @@ class Dashboard extends React.Component{
     }
     return obj;
   }
+      getProgress(boolName){
+    if (boolName == "foo"){
+      return 50;
+    }
+  }
 render(){
+  var getProgress = function(boolName){
+    if (boolName == "foo"){
+        return 90;
+    }
+  }
   return (
       <ScrollView 
         style={styles.container}
         horizontal={false}>
+        <Text
+          style={styles.status}
+          >Current Status:</Text>
           <Lightbox >
             <Image 
               style={{
@@ -71,13 +88,14 @@ render(){
           <ProgressViewIOS 
             style={{
               margin: 20,
-              width: 100,
+              width: 300,
               alignSelf: 'center'
             }}
-            progress={50 / 100}
+            progress={ getProgress("foo")  / 100}
             progressTintColor={"rgba(74,144,226,1)"} 
           />
-        <Text style={styles.text}>Repair Status: {this.props.userInfo.repair_description}</Text>
+        <Text style={styles.text}>{this.props.userInfo.repair_description}</Text>
+        <Text style={styles.text}>Repair Feed:</Text>
       </ScrollView>
     )
 }

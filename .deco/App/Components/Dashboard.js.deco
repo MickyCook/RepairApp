@@ -3,11 +3,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 59,
+					"line": 73,
 					"ch": 20
 				},
 				"to": {
-					"line": 59,
+					"line": 73,
 					"ch": 25
 				}
 			},
@@ -18,11 +18,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 63,
+					"line": 80,
 					"ch": 24
 				},
 				"to": {
-					"line": 63,
+					"line": 80,
 					"ch": 27
 				}
 			},
@@ -34,11 +34,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 64,
+					"line": 81,
 					"ch": 23
 				},
 				"to": {
-					"line": 64,
+					"line": 81,
 					"ch": 26
 				}
 			},
@@ -50,11 +50,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 72,
+					"line": 89,
 					"ch": 22
 				},
 				"to": {
-					"line": 72,
+					"line": 89,
 					"ch": 24
 				}
 			},
@@ -65,11 +65,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 73,
+					"line": 90,
 					"ch": 21
 				},
 				"to": {
-					"line": 73,
+					"line": 90,
 					"ch": 24
 				}
 			},
@@ -81,26 +81,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 76,
-					"ch": 22
-				},
-				"to": {
-					"line": 76,
-					"ch": 24
-				}
-			},
-			"type": "number",
-			"name": "Progress",
-			"group": "PROGRESS VIEW IOS"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 77,
+					"line": 94,
 					"ch": 31
 				},
 				"to": {
-					"line": 77,
+					"line": 94,
 					"ch": 51
 				}
 			},
