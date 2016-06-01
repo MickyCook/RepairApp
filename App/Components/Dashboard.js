@@ -16,7 +16,7 @@ var {
 
 var styles = StyleSheet.create({
   container: {
-    marginTop: 65,
+    marginTop: 15,
     flex: 1
   },
   image: {
@@ -31,12 +31,30 @@ var styles = StyleSheet.create({
     alignSelf: 'center'
   },
   text: {
-    textAlign: 'center',
-    marginTop: 25
+    textAlign: 'left',
+    marginLeft: 10,
+    marginTop: 10
   },
-  status: {
-    textAlign: 'center',
-    marginBottom: 25
+  statusReport: {
+    textAlign: 'left',
+    marginTop: 10,
+    marginLeft: 10,
+    borderTopWidth: 0,
+    borderRightWidth: 0,
+    borderBottomWidth: 1,
+    borderLeftWidth: 0,
+    borderBottomColor: '#000'
+  },
+  title: {
+    textAlign: 'left',
+    marginBottom: 25,
+    marginLeft: 10,
+    fontSize: 20
+  },
+  date: {
+    textAlign: 'left',
+    marginLeft: 10,
+    marginBottom: 5
   }
 });
 
@@ -73,7 +91,7 @@ render(){
         style={styles.container}
         horizontal={false}>
         <Text
-          style={styles.status}
+          style={styles.title}
           >Current Status:</Text>
           <Lightbox >
             <Image 
@@ -87,15 +105,27 @@ render(){
           </Lightbox>
           <ProgressViewIOS 
             style={{
-              margin: 20,
-              width: 300,
+              margin: 10,
+              width:  200 ,
               alignSelf: 'center'
             }}
             progress={ getProgress("foo")  / 100}
             progressTintColor={"rgba(74,144,226,1)"} 
           />
-        <Text style={styles.text}>{this.props.userInfo.repair_description}</Text>
-        <Text style={styles.text}>Repair Feed:</Text>
+        <Text style={styles.statusReport}>{this.props.userInfo.repair_description}</Text>
+      <ProgressViewIOS 
+            style={{
+              margin: 10,
+              width: 300,
+              alignSelf: 'center',
+              height: 1,
+              marginBottom: 25
+            }}
+            progress={ 100  / 100}
+            progressTintColor={"rgba(0,0,0,1)"} 
+          />
+        <Text style={styles.title}>Repair Feed:</Text>
+        <Text style={styles.date}>09/17/15</Text>
                 <Lightbox >
             <Image 
               style={{
@@ -106,7 +136,7 @@ render(){
               source={{uri: this.props.userInfo.avatar_url}}
             />
           </Lightbox>
-      <Text style={styles.text}>{this.props.userInfo.repair_description}</Text>
+      <Text style={styles.text}>Getting Vehicle ready for primer</Text>
       </ScrollView>
     )
 }

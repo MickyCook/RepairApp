@@ -3,11 +3,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 73,
+					"line": 91,
 					"ch": 20
 				},
 				"to": {
-					"line": 73,
+					"line": 91,
 					"ch": 25
 				}
 			},
@@ -18,11 +18,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 80,
+					"line": 98,
 					"ch": 24
 				},
 				"to": {
-					"line": 80,
+					"line": 98,
 					"ch": 27
 				}
 			},
@@ -34,11 +34,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 81,
+					"line": 99,
 					"ch": 23
 				},
 				"to": {
-					"line": 81,
+					"line": 99,
 					"ch": 26
 				}
 			},
@@ -50,11 +50,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 89,
+					"line": 107,
 					"ch": 22
 				},
 				"to": {
-					"line": 89,
+					"line": 107,
 					"ch": 24
 				}
 			},
@@ -65,27 +65,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 90,
-					"ch": 21
-				},
-				"to": {
-					"line": 90,
-					"ch": 24
-				}
-			},
-			"type": "number",
-			"name": "Width",
-			"max": 600,
-			"group": "PROGRESS VIEW IOS"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 94,
+					"line": 112,
 					"ch": 31
 				},
 				"to": {
-					"line": 94,
+					"line": 112,
 					"ch": 51
 				}
 			},
@@ -97,11 +81,58 @@
 		{
 			"range": {
 				"from": {
-					"line": 101,
+					"line": 117,
+					"ch": 22
+				},
+				"to": {
+					"line": 117,
+					"ch": 24
+				}
+			},
+			"type": "number",
+			"name": "Margin",
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 118,
+					"ch": 21
+				},
+				"to": {
+					"line": 118,
+					"ch": 24
+				}
+			},
+			"type": "number",
+			"name": "Width",
+			"max": 600,
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 124,
+					"ch": 31
+				},
+				"to": {
+					"line": 124,
+					"ch": 46
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "ProgressTintColor",
+			"group": "PROGRESS VIEW IOS"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 131,
 					"ch": 24
 				},
 				"to": {
-					"line": 101,
+					"line": 131,
 					"ch": 27
 				}
 			},
@@ -113,11 +144,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 102,
+					"line": 132,
 					"ch": 23
 				},
 				"to": {
-					"line": 102,
+					"line": 132,
 					"ch": 26
 				}
 			},
